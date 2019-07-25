@@ -9,8 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-    <link rel="shortcut icon" href="{{ asset('images/fkar.png') }}">
+    <title>{{ config('app.name', 'Laravel') }}</title> 
 
     <!-- Styles -->
   <!-- Styles -->
@@ -43,9 +42,9 @@
   <!-- Logo -->
   <a href="index2.html" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
-    <span class="logo-mini"><b>R</b>BL</span>
+    <span class="logo-mini"><b>R</b>K</span>
     <!-- logo for regular state and mobile devices -->
-    <span class="logo-lg"><b>Rohis BaLam</b></span>
+    <span class="logo-lg"><b>Radja Kambing</b></span>
   </a>
   <!-- Header Navbar: style can be found in header.less -->
   <nav class="navbar navbar-static-top">
@@ -58,23 +57,10 @@
       <ul class="nav navbar-nav"> 
         <!-- User Account: style can be found in dropdown.less -->
         <li class="dropdown user user-menu">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            <img src="{{ asset('images/icon.png') }}" class="user-image" alt="User Image">
-            <span class="hidden-xs"> {{ Auth::user()->name }}</span>
-          </a>
-          <ul class="dropdown-menu"> 
-            <!-- Menu Footer-->
-            <li class="user-footer">
-              <div class="pull-right">
-                <a href="#" class="btn btn-default btn-flat">Profile</a> 
-                <a href="{{ url('/logout') }}" class="btn btn-default btn-flat" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a> 
-
-                                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-              </div>
-            </li>
-          </ul>
+        <a href="{{ url('/logout') }}" class="dropdown" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="fa fa-sign-in"></i>Log out</a> 
+          <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+             {{ csrf_field() }}
+          </form> 
         </li> 
       </ul>
     </div>
@@ -112,20 +98,7 @@
         <a href="#">
           <i class="fa fa-dashboard"></i> <span>Dashboard</span> 
         </a> 
-      </li> 
-      <li class="treeview">
-          <a href="#">
-            <i class="fa fa-th"></i>
-            <span>Master Data</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i>Data Sekolah</a></li> 
-            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i>User</a></li> 
-          </ul>
-        </li>
+      </li>  
     </ul>
   </section>
   <!-- /.sidebar -->

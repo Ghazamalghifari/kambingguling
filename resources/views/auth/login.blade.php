@@ -36,7 +36,7 @@
 <body class="hold-transition login-page"> 
 <div class="login-box">
   <div class="login-logo">
-    <a><b>ROHIS BANDAR LAMPUNG</b></a>
+    <a><b>Login</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -65,11 +65,7 @@
         </div>
         <!-- /.col -->
       </div>
-    </form>
- 
-
-    <a href="{{ url('/password/reset') }}">I forgot my password</a><br>
-    <a href="{{ url('/register') }}" class="text-center">Register a new membership</a>
+    </form> 
 
   </div>
   <!-- /.login-box-body -->
