@@ -180,7 +180,8 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         Laratrust\LaratrustServiceProvider::class,
         Yajra\Datatables\DatatablesServiceProvider::class,
-        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class
+        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
+        Jenssegers\Agent\AgentServiceProvider::class
 
     ],
 
@@ -237,6 +238,7 @@ return [
         'Twitter'   => Artesaos\SEOTools\Facades\TwitterCard::class,
         // or
         'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
+        'Agent' => Jenssegers\Agent\Facades\Agent::class
 
     ],
 

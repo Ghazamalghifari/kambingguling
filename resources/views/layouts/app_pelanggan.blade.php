@@ -7,7 +7,7 @@
   
     ?>
 
-    <title>Thasya Busana</title> 
+    <title>Kambing Guling Lampung</title> 
     <link rel="apple-touch-icon" sizes="76x76" href="{{asset('/image/favicon.png')}}" />
     <link rel="icon" type="image/png" href="{{asset('/image/favicon.png')}}" /> 
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
@@ -80,8 +80,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                    <img class="navbar-brand" src="{{asset('/image/favicon.png')}}"/>
-                <a class="navbar-brand" href="{{ url('/') }}"><b>Thasya Busana</b></a>
+                <a class="navbar-brand" href="{{ url('/') }}"><b>Kambing Guling Lampung</b></a>
             </div>
 
             <div class="collapse navbar-collapse">
@@ -268,26 +267,5 @@
     <script type="text/javascript">
         var myLazyLoad = new LazyLoad();
     </script>
-    <script type="text/javascript">
-
-
-        $(document).on('click', '#btnBeliSekarang', function(){
-            alert();
-        });
-
-        function alert(){
-         swal({
-            text :  "Produk Berhasil Di Tambahkan Ke Keranjang Belanja",
-            showConfirmButton :  false,
-            type: "success",
-            timer: 10000,
-            onOpen: () => {
-              swal.showLoading()
-          }
-      });
-     }
-
-
- </script>
  @yield('scripts')
  </html>
