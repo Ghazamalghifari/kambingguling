@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" href="{{asset('/image/favicon.png')}}" /> 
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+
     <meta content="width=device-width" name="viewport"/>
     <!-- Bootstrap core CSS     -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet"/>
@@ -30,77 +31,66 @@
     {!! SEO::generate(true) !!}
     <!-- LUMEN -->
     {!! app('seotools')->generate() !!}
-</link>
-</link>
-  <style type="text/css">
+    <style type="text/css">
 
-    .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
-    padding: 1px;
-    }
-  </style>
-    <style>
-      #map {
-        height: 315px;
-        width: 560px;
-       }
-    .list-produk {
-
-        padding-left: 5px;
-        padding-right: 10px;
-
-    }
-    .card .card-image{
-
-        height: auto; /*this makes sure to maintain the aspect ratio*/
-        margin-top: 0px;
-    }
-    .card-pricing {
-        margin-bottom: 20px;
-    }
-    .tombolBeli {
-        padding: 10px 0px;
-        margin:0px;
-    }
-    .card-pricing .card-content {
-        padding: 10px !important;
-    }
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+padding: 1px;
+}
 </style>
+<style>
+  #map {
+    height: 315px;
+    width: 560px;
+   }
+.list-produk {
+
+    padding-left: 5px;
+    padding-right: 10px;
+
+}
+.card .card-image{
+
+    height: auto; /*this makes sure to maintain the aspect ratio*/
+    margin-top: 0px;
+}
+.card-pricing {
+    margin-bottom: 20px;
+}
+.tombolBeli {
+    padding: 10px 0px;
+    margin:0px;
+}
+.card-pricing .card-content {
+    padding: 10px !important;
+}
+</style>
+
 </head>
-
-
+ 
 <body class="blog-posts">
 
     <nav class="navbar navbar-primary navbar-transparent navbar-absolute">
         <div class="container">
+        @if(Agent::isMobile())
+            @else
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+            <div class="navbar-header"> 
+          
                 <a class="navbar-brand" href="{{ url('/') }}"><b>Kambing Guling Lampung</b></a>
-            </div>
-
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="{{ url('/login') }}">
-                            <i class="material-icons">fingerprint</i> Login
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/register') }}">
-                            <i class="material-icons">person_add</i> Register
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
+           
+            </div> 
+            @endif
         </div>
     </nav>
- 
+    <div class="page-header header-filter" data-parallax="true" style="background-image: url('image/logo.jpg');">
+    @if(Agent::isMobile())
+    <div class="container"> 
+            <div class="ml-auto mr-auto text-center">
+                <h2 class="title">Kambing Guling Lampung</h2> <br><br><br>
+            </div> 
+    </div>
+    @endif
+    </div>
                     @yield('content') 
     </div>
 
@@ -181,6 +171,7 @@
         });
       }
     </script>
+    @yield('scripts')
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUfTCdFiOgiKp6LSPAVfIZL1r3NE-dJ2Y&callback=initMap">
     </script>@yield('scripts')
@@ -267,5 +258,26 @@
     <script type="text/javascript">
         var myLazyLoad = new LazyLoad();
     </script>
- @yield('scripts')
+    <script type="text/javascript">
+
+
+        $(document).on('click', '#btnBeliSekarang', function(){
+            alert();
+        });
+
+        function alert(){
+         swal({
+            text :  "Produk Berhasil Di Tambahkan Ke Keranjang Belanja",
+            showConfirmButton :  false,
+            type: "success",
+            timer: 10000,
+            onOpen: () => {
+              swal.showLoading()
+          }
+      });
+     }
+
+
+ </script>
+ @yield('scripts')  
  </html>
