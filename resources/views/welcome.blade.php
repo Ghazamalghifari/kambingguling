@@ -120,9 +120,16 @@ h4 {
 <hr> 
 
 <div class="container"> 
+
         <!--                 nav pills -->
         <div id="navigation-pills">  
-                    <h3 class="title">MENU</h3>  
+        <div class="row">
+            <div class="ml-auto mr-auto text-center">
+              <h1 class="title" style="color:#333333;">MENU</h1>
+            </div> 
+        </div>
+        </div>
+    </div>
                     <ul class="nav nav-pills nav-pills-rose">
                         <li class="nav-item">
                         <a class="nav-link active" href="#kambingguling" data-toggle="tab">KAMBING GULING</a>
@@ -133,8 +140,7 @@ h4 {
                         <li class="nav-item">
                         <a class="nav-link" href="#nasibox" data-toggle="tab">NASI KOTAK & PRASMANAN</a>
                         </li>  
-                    </ul> 
-        </div> <hr>
+                    </ul>  <hr>
               <div class="tab-content tab-space">
                 <div class="tab-pane active" id="kambingguling"> 
                     @include('kambingguling') 

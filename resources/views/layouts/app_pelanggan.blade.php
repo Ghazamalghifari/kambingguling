@@ -88,7 +88,7 @@ padding: 1px;
             <div class="ml-auto mr-auto text-center">
                 <h2 class="title">Kambing Guling & Aqiqah Lampung</h2> 
                 <p>"Rajanya Kambing Guling dan Aqiqah Lampung"</p><a href="{{ $tentang->whatsapp }}" target="_blank" class="btn btn-block buttonColor" rel="tooltip"> Pesen Sekarang</a>
-            </div> <br><br><br><br><br>
+            </div> <br><br><br>
     </div>
     @endif
     </div>
