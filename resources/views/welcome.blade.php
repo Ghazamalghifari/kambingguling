@@ -22,7 +22,7 @@
     .card-pricing .card-content {
         padding: 10px !important;
     } 
-    .card .footer {
+    .card .footer { 
         margin-top: 0px;
         font-family: Helvetica,Arial,sans-serif;
         font-weight: 400;
@@ -31,7 +31,7 @@
         font-size:15px;
     }
     .buttonColor{ 
-        background-color: #FFCA28; 
+        background-color: #33cc33; 
     }
     @font-face {
       font-family: "San Francisco";
@@ -110,19 +110,50 @@ h4 {
     font-size: 20px;
 }
 </style>
- 
-
+   <div class="section section-white">
+   
+   <div class="features-1"> 
+                    <div class="col-md-12 ml-auto mr-auto"> 
+                        <h1 class="title" style="color:#333333;">TENTANG KAMI</h1>
+                        <b>{{ $tentang->tentang_kami }}</b>
+                    </div> 
+            </div>
 @if (Agent::isMobile())   
-        <div class="main main-raised">
-            @include('kambingguling')
-            @include('aqiqah')
-            @include('nasibox')
-            @include('prasmanan') 
-            @include('kenapamilihkami') 
-        </div>
-        <!-- end-main-raised -->
-    @else   
-        <div class="main main-raised">
+<hr> 
+
+<div class="container"> 
+        <!--                 nav pills -->
+        <div id="navigation-pills">  
+                    <h3 class="title">MENU</h3>  
+                    <ul class="nav nav-pills nav-pills-rose">
+                        <li class="nav-item">
+                        <a class="nav-link active" href="#kambingguling" data-toggle="tab">KAMBING GULING</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#aqiqah" data-toggle="tab">AQIQAH</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#nasibox" data-toggle="tab">NASI KOTAK & PRASMANAN</a>
+                        </li>  
+                    </ul> 
+        </div> <hr>
+              <div class="tab-content tab-space">
+                <div class="tab-pane active" id="kambingguling"> 
+                    @include('kambingguling') 
+                </div>
+                <div class="tab-pane" id="aqiqah"> 
+                     @include('aqiqah')
+                </div>
+                <div class="tab-pane" id="nasibox">
+                    @include('nasibox')  
+                     @include('prasmanan')  
+                </div> 
+              </div> 
+          </div>   
+        
+        @include('kenapamilihkami') 
+</div> 
+    @else    
           
             @include('kambingguling')
             @include('aqiqah')
@@ -131,10 +162,10 @@ h4 {
             @include('kenapamilihkami') 
 
             
-        </div>
-        <!-- end-main-raised -->
         
 @endif
+    </div>
+</div>
 
         @endsection
         @section('scripts')
@@ -178,5 +209,3 @@ h4 {
             };
         </script>
         @endsection
-    </div>
-</div>

@@ -76,7 +76,7 @@ padding: 1px;
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header"> 
           
-                <a class="navbar-brand" href="{{ url('/') }}"><b>Kambing Guling Lampung</b></a>
+                <a class="navbar-brand" href="{{ url('/') }}"><b>Kambing Guling & Aqiqah Lampung</b></a>
            
             </div> 
             @endif
@@ -86,8 +86,9 @@ padding: 1px;
     @if(Agent::isMobile())
     <div class="container"> 
             <div class="ml-auto mr-auto text-center">
-                <h2 class="title">Kambing Guling Lampung</h2> <br><br><br>
-            </div> 
+                <h2 class="title">Kambing Guling & Aqiqah Lampung</h2> 
+                <p>"Rajanya Kambing Guling dan Aqiqah Lampung"</p><a href="{{ $tentang->whatsapp }}" target="_blank" class="btn btn-block buttonColor" rel="tooltip"> Pesen Sekarang</a>
+            </div> <br><br><br><br><br>
     </div>
     @endif
     </div>

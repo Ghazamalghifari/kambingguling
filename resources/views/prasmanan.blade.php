@@ -18,7 +18,8 @@
                                                 <li>Sambel Kentang</li>
                                                 <li>Olahan Daging/Ayam/Ikan</li>
                                                 <li>Krupuk</li>
-                                                <li>Buah</li>                           
+                                                <li>Buah</li>   
+                                                <li>Air Mineral</li>                           
                                                 @if(Agent::isMobile())
                                                     @else
                                                 <li>-</li>   
