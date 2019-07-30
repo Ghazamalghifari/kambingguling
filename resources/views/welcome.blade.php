@@ -112,11 +112,9 @@ h4 {
 </style>
    <div class="section section-white">
    
-   <div class="features-1"> 
-                    <div class="col-md-12 ml-auto mr-auto"> 
+   <div class="features-1">  
                         <h1 class="title" style="color:#333333;">TENTANG KAMI</h1>
-                        <b>{{ $tentang->tentang_kami }}</b>
-                    </div> 
+                        <b>{{ $tentang->tentang_kami }}</b> 
             </div>
 @if (Agent::isMobile())   
 <hr> 
