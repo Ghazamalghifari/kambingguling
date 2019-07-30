@@ -23,8 +23,7 @@
                                                 @if(Agent::isMobile())
                                                     @else
                                                 <li>-</li>   
-                                                <li>-</li>   
-                                                <li>-</li>    
+                                                <li>-</li>    <br>
                                                     @endif
                                                 </ul>    
                                                     <a href="{{ $tentang->whatsapp }}" target="_blank" class="btn btn-block buttonColor" rel="tooltip"> Pesen Sekarang</a> 
@@ -47,7 +46,7 @@
                                                 <li>Air Mineral</li>                    
                                                 @if(Agent::isMobile())
                                                     @else  
-                                                <li>-</li>   
+                                                <li>-</li>   <br>
                                                     @endif
                                                 </ul>                 
                                                     <a href="{{ $tentang->whatsapp }}" target="_blank" class="btn btn-block buttonColor" rel="tooltip"> Pesen Sekarang</a> 
@@ -69,8 +68,12 @@
                                                 <li>Olahan Ikan</li>
                                                 <li>Krupuk</li>
                                                 <li>Buah</li>
-                                                <li>Air Mineral</li>   
-                                                </ul>
+                                                <li>Air Mineral</li>                  
+                                                @if(Agent::isMobile())
+                                                    @else  
+                                                       <br>
+                                                    @endif
+                                                </ul>         
                                                     <a href="{{ $tentang->whatsapp }}" target="_blank" class="btn btn-block buttonColor" rel="tooltip"> Pesen Sekarang</a> 
                                                 </div> 
                                             </div>
