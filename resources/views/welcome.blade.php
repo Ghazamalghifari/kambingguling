@@ -117,6 +117,7 @@ h4 {
             @include('kambingguling')
             @include('aqiqah')
             @include('nasibox')
+            @include('prasmanan') 
             @include('kenapamilihkami') 
         </div>
         <!-- end-main-raised -->
@@ -126,6 +127,7 @@ h4 {
             @include('kambingguling')
             @include('aqiqah')
             @include('nasibox')
+            @include('prasmanan') 
             @include('kenapamilihkami') 
 
             

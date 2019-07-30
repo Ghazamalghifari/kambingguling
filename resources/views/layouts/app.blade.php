@@ -99,6 +99,18 @@
           <i class="fa fa-dashboard"></i> <span>Dashboard</span> 
         </a> 
       </li>  
+      <li class="tree">
+        <a href="{{ route('tentang.index') }}">Kambing Guling</a> 
+      </li> 
+      <li class="tree">
+        <a href="{{ route('tentang.index') }}">Aqiqah</a> 
+      </li> 
+      <li class="tree">
+        <a href="{{ route('tentang.index') }}">Paket Nasi Box</a> 
+      </li> 
+      <li class="tree">
+        <a href="{{ route('tentang.index') }}">Tentang</a> 
+      </li> 
     </ul>
   </section>
   <!-- /.sidebar -->
@@ -130,6 +142,15 @@
 
     </div>
 
+    <style>
+.dataTables_filter {
+  float: right !important
+}
+.dataTables_paginate.paging_simple_numbers {
+  float: right !important
+}
+</style>
+
     <!-- Scripts -->
      <!-- Scripts -->
 <script src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
@@ -148,11 +169,29 @@
   $.widget.bridge('uibutton', $.ui.button);
 </script>
 <script src="{{ asset('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js') }}"></script>
+<script src="{{ asset('dist/js/pages/dashboard.js') }}"></script>
 <script src="{{ asset('bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
 <script src="{{ asset('bower_components/fastclick/lib/fastclick.js') }}"></script>
 <script src="{{ asset('dist/js/adminlte.min.js') }}"></script>
-<script src="{{ asset('dist/js/pages/dashboard.js') }}"></script>
-<script src="{{ asset('dist/js/demo.js') }}"></script> 
-@yield('scripts')
+<script src="{{ asset('dist/js/demo.js') }}"></script>  
+<!-- DataTables -->
+<script src="{{ asset('bower_components/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js') }}"></script> 
+<script src="{{ asset('bower_components/select2/dist/js/select2.full.min.js') }}"></script>
+<script src="{{ asset('bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
+
+@yield('scripts')  
+<script>
+  $(function () { 
+    $('#html').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
 </body>
 </html>

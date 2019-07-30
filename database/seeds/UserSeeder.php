@@ -3,6 +3,7 @@
 use Illuminate\Database\Seeder;
 use App\Role;
 use App\User;
+use App\Tentang;
 
 class UserSeeder extends Seeder
 {
@@ -40,5 +41,17 @@ class UserSeeder extends Seeder
 		$admin->password = bcrypt('rahasia');
 		$admin->save();
 		$admin->attachRole($adminRole);
+
+		
+    	// Membuat Tentang Perusahaan
+	    $tentangUsaha = new Tentang();
+	    $tentangUsaha->tentang_kami = "Kambing Guling adalah";
+	    $tentangUsaha->gmail = "kambinggulinglampung@gmail.com";
+	    $tentangUsaha->facebook = "Kambing Guling Lampung";
+	    $tentangUsaha->instagram = "kambinggulinglampung";
+	    $tentangUsaha->whatsapp = "08222222222";
+	    $tentangUsaha->telphone = "08222222222";
+	    $tentangUsaha->alamat = "Bandar Lampung";
+		$tentangUsaha->save(); 
     }
 }

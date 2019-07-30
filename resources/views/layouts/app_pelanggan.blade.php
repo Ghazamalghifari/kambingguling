@@ -98,59 +98,70 @@ padding: 1px;
             <div class="container">
                 <div class="content"> 
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <h5 style="font-size: 15px;">
                                 Tentang Kami
                             </h5> 
                             <p>
-                                Thasya busana adalah usaha yang bergerak di bidang fashion. <br>
-                                Yang mana kami lebih fokus dengan baju etnik syar'i, <br>
-                                seperti contoh etnik lampung (baju tapis,baju tenun dan sulam usus). <br>
-                                kami juga menerima pesenan baju etnik dari daerah lain sesuai custom.
+                                {{ $tentang->tentang_kami }}
                             </p> 
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <h5 style="font-size: 15px; mar">
                                 Hubungi Kami
                             </h5>
                             <div class="social-feed">
                                 <div class="feed-line"> 
-                                    <a href="mailto:thasyabusana.bisnis@gmail.com" target="_blank">
+                                    <a href="mailto:kambinggulinglampung@gmail.com" target="_blank">
                                         <i class="fa fa-envelope fa-5x">
                                         </i>
                                         <p>
-                                           Thasyabusana.bisnis@gmail.com
+                                           kambinggulinglampung@gmail.com
                                         </p>
                                     </a>
                                 </div>
                                 <div class="feed-line">
-                                    <a href="https://www.facebook.com/thasya.busana" target="_blank">
+                                    <a href="{{ $tentang->facebook }}" target="_blank">
                                         <i class="fa fa-facebook-square fa-5x">
                                         </i>
                                         <p>
-                                           Thasya Busana
+                                           Kambing Guling Lampung
                                         </p>
                                     </a>
                                 </div> 
                                 <div class="feed-line">
-                                    <a href="https://www.instagram.com/thasya_busana/" target="_blank">
+                                    <a href="{{ $tentang->instagram }}" target="_blank">
                                     <i class="fa fa-instagram fa-5x">
                                     </i>
                                     <p>
-                                       Thasya_busana
+                                       Kambinggulinglampung
                                     </p>
                                     </a>
                                 </div>  
                                 <div class="feed-line">
-                                    <a href="https://api.whatsapp.com/send?phone=6281369704950&text=Halo,Permisi%20Saya%20mau%20order....." target="_blank">
+                                    <a href="{{ $tentang->whatsapp }}" target="_blank">
                                     <i class="fa fa-whatsapp fa-5x">
                                     </i>
                                     <p>
-                                        +6281369704950
+                                    +62 812 7141 8417
                                     </p>
                                     </a>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 style="font-size: 15px;">
+                                Alamat (1)
+                            </h5> 
+                            <p>
+                            Jl. Tenam blok O.26 Rajabasa permai Bandar Lampung.
+                            </p> 
+                            <h5 style="font-size: 15px;">
+                                Alamat (2)
+                            </h5> 
+                            <p>
+                            Jl. Soemantri Brodjonegoro no 13 gedung meneng Rajabasa bandar Lampung.
+                            </p> 
                         </div>
                     </div>
                 </div>
