@@ -138,7 +138,7 @@ h4 {
                         <a class="nav-link" href="#aqiqah" data-toggle="tab">AQIQAH</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#nasibox" data-toggle="tab">NASI KOTAK&PRASMANAN</a>
+                        <a class="nav-link" href="#nasibox" data-toggle="tab">NASI KOTAK</a>
                         </li>  
                     </ul>  <hr>
               <div class="tab-content tab-space">

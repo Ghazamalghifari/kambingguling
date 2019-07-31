@@ -9,9 +9,14 @@
 <div class="row">
 <div class="col-md-4 col-sm-6 col-xs- 6list-produk " style=" margin-bottom:10px;"> 
                                             <div class="card cards card-pricing"> 
+        <a href="url('') ">
+            <div class="card-image">
+                <img alt="" data-src="{{ asset('image/prasmanan3.jpg') }}">
+            </div>
+        </a>
                                                 <div class="card-content">  
                                                 <h3 class="card-category text-info"><b>Paket A</b></h3> 
-                                                <b style="color:#d21f30;font-size:40px">Rp. 20.000</b> <hr>                                                                    
+                                                <b style="color:#d21f30;font-size:35px">Rp. 20.000</b> <hr>                                                                    
                                                 <ul>
                                                 <li>Nasi Putih</li>
                                                 <li>Aneka Shop/CapCay</li>
@@ -26,15 +31,20 @@
                                                 <li>-</li>    <br>
                                                     @endif
                                                 </ul>    
-                                                    <a href="{{ $tentang->whatsapp }}" target="_blank" class="btn btn-block buttonColor" rel="tooltip"> Pesen Sekarang</a> 
+                                                    <a href="{{ $tentang->whatsapp }}" target="_blank" class="btn btn-block buttonColor" rel="tooltip"> Pesan Sekarang</a> 
                                                 </div> 
                                             </div>
                                         </div> 
 <div class="col-md-4 col-sm-6 col-xs- 6list-produk " style=" margin-bottom:10px;">
                                             <div class="card cards card-pricing"> 
+        <a href="url('') ">
+            <div class="card-image">
+                <img alt="" data-src="{{ asset('image/prasmanan2.jpg') }}">
+            </div>
+        </a>
                                                 <div class="card-content">  
                                                 <h3 class="card-category text-info"><b>Paket B</b></h3> 
-                                                <b style="color:#d21f30;font-size:40px">Rp. 25.000</b> <hr>                                                                    
+                                                <b style="color:#d21f30;font-size:35px">Rp. 25.000</b> <hr>                                                                    
                                                 <ul>
                                                 <li>Nasi Putih</li>
                                                 <li>Aneka Shop/CapCay</li>
@@ -49,16 +59,21 @@
                                                 <li>-</li>   <br>
                                                     @endif
                                                 </ul>                 
-                                                    <a href="{{ $tentang->whatsapp }}" target="_blank" class="btn btn-block buttonColor" rel="tooltip"> Pesen Sekarang</a> 
+                                                    <a href="{{ $tentang->whatsapp }}" target="_blank" class="btn btn-block buttonColor" rel="tooltip"> Pesan Sekarang</a> 
                                                 </div> 
                                             </div>
                                         </div> 
                                          
 <div class="col-md-4 col-sm-6 col-xs- 6list-produk " style=" margin-bottom:10px;">
                                             <div class="card cards card-pricing"> 
+        <a href="url('') ">
+            <div class="card-image">
+                <img alt="" data-src="{{ asset('image/prasmanan1.jpg') }}">
+            </div>
+        </a>
                                                 <div class="card-content">  
                                                 <h3 class="card-category text-info"><b>Paket C</b></h3>
-                                                <b style="color:#d21f30;font-size:40px">Rp. 30.000</b> <hr>  
+                                                <b style="color:#d21f30;font-size:35px">Rp. 30.000</b> <hr>  
                                                 <ul>
                                                 <li>Nasi Putih</li>
                                                 <li>Aneka Shop/CapCay</li>
@@ -74,7 +89,7 @@
                                                        <br>
                                                     @endif
                                                 </ul>         
-                                                    <a href="{{ $tentang->whatsapp }}" target="_blank" class="btn btn-block buttonColor" rel="tooltip"> Pesen Sekarang</a> 
+                                                    <a href="{{ $tentang->whatsapp }}" target="_blank" class="btn btn-block buttonColor" rel="tooltip"> Pesan Sekarang</a> 
                                                 </div> 
                                             </div>
                                         </div> 

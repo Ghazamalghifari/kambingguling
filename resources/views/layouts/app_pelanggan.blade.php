@@ -86,8 +86,8 @@ padding: 1px;
     @if(Agent::isMobile())
     <div class="container"> 
             <div class="ml-auto mr-auto text-center">
-                <h2 class="title">Kambing Guling & Aqiqah Lampung</h2> 
-                <p>"Rajanya Kambing Guling dan Aqiqah Lampung"</p><a href="{{ $tentang->whatsapp }}" target="_blank" class="btn btn-block buttonColor" rel="tooltip"> Pesen Sekarang</a>
+                <h3 class="title">Kambing Guling &  <br>  Aqiqah   Lampung</h3> 
+                <p>"Rajanya Kambing Guling dan Aqiqah <br> di Lampung"</p><a href="{{ $tentang->whatsapp }}" target="_blank" class="btn btn-block buttonColor" rel="tooltip"> Pesan Sekarang</a>
             </div> <br><br><br><br><br><br><br>
     </div>
     @endif
