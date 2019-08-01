@@ -7,6 +7,10 @@ use Jenssegers\Agent\Agent;
 use OpenGraph;
 use SEOMeta;
 use App\Tentang; 
+use App\KambingGuling;
+use App\Aqiqah;
+use App\NasiBox;
+use App\Prasmanan;
 
 class HomeController extends Controller
 {
@@ -50,6 +54,10 @@ class HomeController extends Controller
 
         
         $tentang = Tentang::first();
-        return view('welcome')->with(compact('tentang'));
+        $kambingguling = KambingGuling::first();
+        $aqiqah = Aqiqah::first();
+        $nasibox = NasiBox::first();
+        $prasmanan = Prasmanan::first();
+        return view('welcome')->with(compact('tentang','kambingguling','aqiqah','nasibox','prasmanan'));
     }
 }

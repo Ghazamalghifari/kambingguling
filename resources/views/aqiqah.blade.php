@@ -17,7 +17,7 @@
         </a>
         <div class="card-content">  
             <h4 class="card-category text-info"><b>Paket Hemat</b></h4>     
-            <b style="color:#d21f30;font-size:35px">Rp.1.300.000</b> <hr>             
+            <b style="color:#d21f30;font-size:35px">Rp. {{ $aqiqah->harga_1 }}</b> <hr>             
                                                 <ul>
                                                 <li>Sate 150 Tusuk</li>
                                                 <li>Gulai ±50 porsi</li>
@@ -40,7 +40,7 @@
         </a>
         <div class="card-content">  
             <h4 class="card-category text-info"><b>Paket Standard</b></h4>    
-            <b style="color:#d21f30;font-size:35px">Rp.1.500.000</b> <hr>      
+            <b style="color:#d21f30;font-size:35px">Rp. {{ $aqiqah->harga_2 }}</b> <hr>      
                                                 <ul>
                                                 <li>Sate 180 Tusuk</li>
                                                 <li>Gulai ±60 porsi</li>
@@ -63,7 +63,7 @@
         </a>
         <div class="card-content">  
             <h4 class="card-category text-info"><b>Paket Spesial</b></h4>    
-            <b style="color:#d21f30;font-size:35px">Rp.1.800.000</b> <hr>             
+            <b style="color:#d21f30;font-size:35px">Rp. {{ $aqiqah->harga_3 }}</b> <hr>             
                                                 <ul>
                                                 <li>Sate 210 Tusuk</li>
                                                 <li>Gulai ±70 porsi</li>
@@ -90,7 +90,7 @@
         </a>
         <div class="card-content">  
             <h4 class="card-category text-info"><b>Paket Kambing Guling</b></h4>     
-            <b style="color:#d21f30;font-size:35px">Rp.2.100.000</b> <hr>   
+            <b style="color:#d21f30;font-size:35px">Rp. {{ $aqiqah->harga_4 }}</b> <hr>   
             <ul>
                                                 <li>Untuk 60 porsi</li>
                                                 <li>1 kambing guling spesial</li>

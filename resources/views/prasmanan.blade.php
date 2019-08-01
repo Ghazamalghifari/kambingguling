@@ -16,7 +16,7 @@
         </a>
                                                 <div class="card-content">  
                                                 <h3 class="card-category text-info"><b>Paket A</b></h3> 
-                                                <b style="color:#d21f30;font-size:35px">Rp. 20.000</b> <hr>                                                                    
+                                                <b style="color:#d21f30;font-size:35px">Rp. {{ $prasmanan->harga_1 }}</b> <hr>                                                                    
                                                 <ul>
                                                 <li>Nasi Putih</li>
                                                 <li>Aneka Shop/CapCay</li>
@@ -44,7 +44,7 @@
         </a>
                                                 <div class="card-content">  
                                                 <h3 class="card-category text-info"><b>Paket B</b></h3> 
-                                                <b style="color:#d21f30;font-size:35px">Rp. 25.000</b> <hr>                                                                    
+                                                <b style="color:#d21f30;font-size:35px">Rp. {{ $prasmanan->harga_2 }}</b> <hr>                                                                    
                                                 <ul>
                                                 <li>Nasi Putih</li>
                                                 <li>Aneka Shop/CapCay</li>
@@ -73,7 +73,7 @@
         </a>
                                                 <div class="card-content">  
                                                 <h3 class="card-category text-info"><b>Paket C</b></h3>
-                                                <b style="color:#d21f30;font-size:35px">Rp. 30.000</b> <hr>  
+                                                <b style="color:#d21f30;font-size:35px">Rp. {{ $prasmanan->harga_3 }}</b> <hr>  
                                                 <ul>
                                                 <li>Nasi Putih</li>
                                                 <li>Aneka Shop/CapCay</li>

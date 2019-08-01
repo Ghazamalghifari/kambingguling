@@ -16,7 +16,7 @@
         </a>
                                                 <div class="card-content">  
                                                 <h3 class="card-category text-info"><b>Paket A</b></h3> 
-                                                <b style="color:#d21f30;font-size:35px">Rp. 12.000</b> <hr>                                                                    
+                                                <b style="color:#d21f30;font-size:35px">Rp. {{ $nasibox->harga_1 }}</b> <hr>                                                                    
                                                 <ul>
                                                 <li>Nasi</li>
                                                 <li>Sambel Kentang</li>
@@ -42,7 +42,7 @@
         </a>
                                                 <div class="card-content">  
                                                 <h3 class="card-category text-info"><b>Paket B</b></h3> 
-                                                <b style="color:#d21f30;font-size:35px">Rp. 15.000</b> <hr>  
+                                                <b style="color:#d21f30;font-size:35px">Rp. {{ $nasibox->harga_2 }}</b> <hr>  
                                                 <ul>
                                                 <li>Nasi</li>
                                                 <li>Sambel Kentang</li>
@@ -66,7 +66,7 @@
         </a>
                                                 <div class="card-content">  
                                                 <h3 class="card-category text-info"><b>Paket C</b></h3> 
-                                                <b style="color:#d21f30;font-size:35px">Rp. 18.000</b> <hr>   
+                                                <b style="color:#d21f30;font-size:35px">Rp. {{ $nasibox->harga_3 }}</b> <hr>   
                                                 <ul>
                                                 <li>Nasi</li>
                                                 <li>Sambel Kentang</li>

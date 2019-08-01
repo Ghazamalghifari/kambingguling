@@ -17,7 +17,7 @@
         </a>
                                                 <div class="card-content">  
                                                 <h4 class="card-category text-info"><b>   PAKET STANDARD </b></h4>
-                                                <b style="color:#d21f30;font-size:35px">Rp.1.100.000  </b> <hr>  
+                                                <b style="color:#d21f30;font-size:35px">Rp. {{ $kambingguling->harga_1 }}  </b> <hr>  
                                                  
                                                 <ul>
                                                 <li>1 kambing guling muda</li>
@@ -42,7 +42,7 @@
         </a>
                                                 <div class="card-content">  
                                                 <h4 class="card-category text-info"><b>   PAKET MEDIUM</b></h4>
-                                                <b style="color:#d21f30;font-size:35px">Rp.1.400.000  </b> <hr>  
+                                                <b style="color:#d21f30;font-size:35px">Rp. {{ $kambingguling->harga_2 }}  </b> <hr>  
                                                 <ul>
                                                 <li>1 kambing guling Muda</li>
                                                 <li>Berat : &nbsp;7 - 8 Kg</li>
@@ -66,7 +66,7 @@
         </a>
                                                 <div class="card-content">  
                                                 <h4 class="card-category text-info"><b>   PAKET SPESIAL</b></h4>
-                                                <b style="color:#d21f30;font-size:35px">Rp.1.700.000  </b> <hr> 
+                                                <b style="color:#d21f30;font-size:35px">Rp. {{ $kambingguling->harga_3 }} </b> <hr> 
                                                 
                                                 <ul> 
                                                 <li>1 kambing guling spesial</li>
@@ -95,7 +95,7 @@
         </a>
                                                 <div class="card-content">  
                                                 <h4 class="card-category text-info"><b>PAKET KOMPLIT</b></h4>
-                                                <b style="color:#d21f30;font-size:35px">Rp.2.100.000 </b> <hr>
+                                                <b style="color:#d21f30;font-size:35px">Rp. {{ $kambingguling->harga_4 }} </b> <hr>
                                                 <ul>
                                                 <li>Untuk 60 porsi</li>
                                                 <li>1 kambing guling spesial</li>
