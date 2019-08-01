@@ -100,13 +100,16 @@
         </a> 
       </li>  
       <li class="tree">
-        <a href="{{ route('tentang.index') }}">Kambing Guling</a> 
+        <a href="{{ route('kambingguling.index') }}">Kambing Guling</a> 
       </li> 
       <li class="tree">
-        <a href="{{ route('tentang.index') }}">Aqiqah</a> 
+        <a href="{{ route('aqiqah.index') }}">Aqiqah</a> 
       </li> 
       <li class="tree">
-        <a href="{{ route('tentang.index') }}">Paket Nasi Box</a> 
+        <a href="{{ route('nasibox.index') }}">Nasi Box</a> 
+      </li> 
+      <li class="tree">
+        <a href="{{ route('prasmanan.index') }}">Prasmanan</a> 
       </li> 
       <li class="tree">
         <a href="{{ route('tentang.index') }}">Tentang</a> 
